@@ -10,8 +10,10 @@
 </head>
 <body>
     <div id="root">
-        <h1>{{ title }}</h1>
-        <img :src="titleImg" alt="">
+        <h1 :class="titleCss">{{ title }}</h1>
+        <img :src="titleImg" alt="" :class="titleImgCss">
+        <div></div>
+        <button @click="changeImg">Cambia immagine</button>
     </div>
 
 
